@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import MenuSlice from "./Slices/MenuSlice";
+import LiveChatSlice from "./Slices/LiveChatSlice";
 
 const AppDataStore = configureStore({
     reducer: {
-        menu: MenuSlice
+        menu: MenuSlice,
+        livechat: LiveChatSlice
     }
 });
 
